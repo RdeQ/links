@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="author" content="Bobby deQuillfeldt">
     <style>
+      
       * {
         margin: 0;
         padding: 0;
@@ -13,7 +14,10 @@
       body {
         padding-top: 40px;
         padding-bottom: 40px;
+        background-color: rgb(2, 148, 148);
       }
+
+      /*Banner Section*/
 
       .name {
         margin: 12px;
@@ -21,7 +25,7 @@
         justify-content: center;
         font-size: 40px;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        color:deeppink;
+        color:rgb(207, 45, 131);
 
       }
 
@@ -38,6 +42,8 @@
         border: 3px solid gray;
       }
 
+      /*Social Media Link*/
+
       .socials {
         display: flex;
         flex-direction: row;
@@ -45,9 +51,10 @@
       }
 
       .soc {
+        display: flex;
+        justify-content: center;
         margin: 5px 30px 5px;
         border-radius: 8px;
-        line-height: 0;
         background-color: gray;
       }
 
@@ -56,6 +63,36 @@
         height: 48px;
         border-radius: 48px;
         object-fit: cover;
+      }
+
+      /*Linked Articles*/
+
+      .articles {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: space-between;
+        border: 2px solid pink;
+        margin: 5px;
+
+      }
+
+      .art {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        border: 2px solid yellow;
+      }
+
+      .artthumb {
+        margin: 5px;
+        width: 48px;
+        height: 48px;
+        border-radius: 48px
+      }
+
+      .blurb {
+        margin-right: 5px;
       }
 
     </style>
@@ -88,9 +125,21 @@
     </div>
 
     <div class="articles">
-      <a class="art>" href="" target="_blank"></a>
-      <a class="art>" href="" target="_blank"></a>
-      <a class="art>" href="" target="_blank"></a>
+      
+      <a class="art" href="https://www.punknews.org/review/17693/action-park-you-must-be-this-tall-to-die" target="_blank"><img href="/Images/PunkNews.jpg" alt="Punk News" class="artthumb"></a>
+
+      <a class="art" href="" target="_blank"><img href="" alt="" class="artthumb"><span class="blurb">Placeholder Text</span>
+      </a>
+
+      <a class="art" href="" target="_blank"><img href="" alt="" class="artthumb"><span class="blurb">Placeholder Text</span>
+      </a>
+
+      <a class="art" href="" target="_blank"><img href="" alt="" class="artthumb"><span class="blurb">Placeholder Text</span>
+      </a>
+
+      <a class="art" href="" target="_blank"><img href="" alt="" class="artthumb"><span class="blurb">Placeholder Text</span>
+      </a>
+
     </div>
     
   </body>
