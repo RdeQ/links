@@ -12,15 +12,25 @@
       }
       
       body {
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
         padding-top: 40px;
         padding-bottom: 40px;
         background-color: rgb(2, 148, 148);
       }
 
+      .everything {
+        display: flex;
+        flex-direction: column;
+        max-width: 640px;
+        gap: 30px;
+        flex-grow: 1;
+      }
+
       /*Banner Section*/
 
       .name {
-        margin: 12px;
         display: flex;
         justify-content: center;
         font-size: 40px;
@@ -42,27 +52,20 @@
         border: 3px solid gray;
       }
 
-      /*Social Media Link*/
+      /*Social Media Links*/
 
       .socials {
         display: flex;
-        flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
+        line-height: 0
       }
 
-      .soc {
-        display: flex;
-        justify-content: center;
-        margin: 5px 30px 5px;
-        border-radius: 8px;
-        background-color: gray;
-      }
-
-      .thumb {
+      .soc img {
         width: 48px;
         height: 48px;
-        border-radius: 48px;
+        border-radius: 8px;
         object-fit: cover;
+        background-color: gray;
       }
 
       /*Linked Articles*/
@@ -70,77 +73,84 @@
       .articles {
         display: flex;
         flex-flow: column wrap;
-        align-items: center;
-        justify-content: space-between;
-        border: 2px solid pink;
-        margin: 5px;
-
+        padding: 20px;
+        gap: 20px;
       }
 
       .art {
         display: flex;
-        flex-flow: row wrap;
+        padding:5px;
+        gap: 8px;
+        border-radius: 48px;
         align-items: center;
-        border: 2px solid yellow;
+        background-color: gray;
       }
 
-      .artthumb {
-        margin: 5px;
+      .art img {
         width: 48px;
         height: 48px;
-        border-radius: 48px
+        border-radius: 48px;
+        object-fit: cover;
       }
 
-      .blurb {
-        margin-right: 5px;
+      .art a {
+        text-decoration: none;
+        text-align: center;
+        flex-grow: 1;
       }
-
+    
     </style>
   </head>
-  
+
   <body>
-    
-    <div class="banner">
-      <img src="/Images/profpic.jpg" alt="Action Park Profile Image" class="profpic">
+    <div class="everything">
+
+<!--Banner Section-->
+
+      <div class="banner">
+        <img src="/Images/profpic.jpg" alt="Action Park Profile Image" class="profpic">
+      </div>
+        
+      <div class="name">
+        Action Park
+      </div>
+
+<!--Social Media Links-->
+
+      <div class="socials">
+        
+        <div class="soc">
+          <a href="https://www.facebook.com/actionparkny/" target="_blank"><img src="/Images/FB.png" alt="Facebook">
+          </a>
+        </div>
+
+        <div class="soc">
+          <a href="https://www.instagram.com/actionparkny/?hl=en" target="_blank"><img src="/Images/Insta.png" alt="Instagram">
+            </a>
+        </div>
+
+        <div class="soc"> 
+          <a href="https://actionparkistaken.bandcamp.com/album/you-must-be-this-tall-to-die" target="_blank"><img src="/Images/Bandcamp.png" alt="Bandcamp"></a>
+        </div>
+      </div>
+
+<!--Linked Articles-->
+
+      <div class="articles">
+        
+        <div class="art">
+          <img src="/Images/PunkNews.jpg" alt="Punk News">
+          <a href="https://www.punknews.org/review/17693/action-park-you-must-be-this-tall-to-die" target="_blank">Review of "You Must Be This Tall To Die 2021 - Action Park" - Punk News 
+          </a>
+        </div>
+
+        <div class="art">
+          <img src="/Images/Timmy.webp" alt="Paul Cochrane Timmy">
+          <a href="" target="_blank">Classic Gear: Paul Cochrane Timmy - Guitar World
+          </a>
+        </div>
+
+      </div>
     </div>
-      
-    <div class="name">
-      Action Park
-    </div>
-
-    <div class="socials">
-      
-      <a class="soc" href="https://www.facebook.com/actionparkny/" target="_blank">
-       <img class="thumb" src="/Images/FB.png" alt="Facebook">
-      </a>
-
-      <a class="soc" href="https://www.instagram.com/actionparkny/?hl=en" target="_blank">
-        <img class="thumb" src="/Images/Insta.png" alt="Instagram">
-      </a>
-
-      <a class="soc" href="https://actionparkistaken.bandcamp.com/album/you-must-be-this-tall-to-die" target="_blank">
-        <img class="thumb" src="/Images/Bandcamp.png" alt="Bandcamp">
-      </a>
-
-    </div>
-
-    <div class="articles">
-      
-      <a class="art" href="https://www.punknews.org/review/17693/action-park-you-must-be-this-tall-to-die" target="_blank"><img href="/Images/PunkNews.jpg" alt="Punk News" class="artthumb"></a>
-
-      <a class="art" href="" target="_blank"><img href="" alt="" class="artthumb"><span class="blurb">Placeholder Text</span>
-      </a>
-
-      <a class="art" href="" target="_blank"><img href="" alt="" class="artthumb"><span class="blurb">Placeholder Text</span>
-      </a>
-
-      <a class="art" href="" target="_blank"><img href="" alt="" class="artthumb"><span class="blurb">Placeholder Text</span>
-      </a>
-
-      <a class="art" href="" target="_blank"><img href="" alt="" class="artthumb"><span class="blurb">Placeholder Text</span>
-      </a>
-
-    </div>
-    
   </body>
 </html>
